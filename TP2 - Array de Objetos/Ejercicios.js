@@ -7,6 +7,7 @@ const router = {
   soportaWifi: true
 };
 
+console.log("Ejercicio 1:")
 console.log("Objeto Router: ", router);
 
 // Ejercicio 2: Array dispositivos de red
@@ -18,6 +19,7 @@ const dispositivosRed = [
   { tipo: "Router", marca: "Asus", modelo: "RT-AX86U", precio: 200}
 ];
 
+console.log("\n Ejercicio 2:")
 console.log("Array de dispositivos red: ", dispositivosRed);
 
 // EJercicio 3: Filtrar por marca (utilizando el array anterior)
@@ -25,6 +27,7 @@ const dispositivosFiltrados = dispositivosRed.filter(
   (dispositivo) => dispositivo.marca === "TP-Link"
 );
 
+console.log("\n Ejercicio 3:")
 console.log("Dispositivos de la marca TP-Link:", dispositivosFiltrados);
 
 // Ejercicio 4: Mapear IP
@@ -38,6 +41,7 @@ const servidores = [
 
 const direccionesIP = servidores.map(servidor => servidor.ip);
 
+console.log("\n Ejercicio 4:")
 console.log("Direcciones IP:", direccionesIP);
 
 // Ejercicio 5: Filtrar y ordenar paquetes
@@ -52,6 +56,7 @@ const paquetesDatos = [
 const paquetesFiltrados = paquetesDatos.filter(paquete => paquete.tamaño > 1000);
 const paquetesOrdenados = paquetesFiltrados.sort((a, b) => b.prioridad - a.prioridad);
 
+console.log("\n Ejercicio 5:")
 console.log("Paquetes filtrados y ordenados de mayor a menor: ", paquetesOrdenados);
 
 // Ejercicio 6: Estadisticas de red
@@ -79,6 +84,7 @@ horas.forEach(hora => {
   }
 });
 
+console.log("\n Ejercicio 6:")
 console.log("Total de datos transferidos: ${totalDatos} MB");
 console.log("Hora con mayor tráfico: ${horaMax} (${maxTrafico} MB)");
 
@@ -100,6 +106,7 @@ conexiones.forEach(conexion => {
   conexionesPorProtocolo[protocolo] = (conexionesPorProtocolo[protocolo] || 0) + 1;
 });
 
+console.log("\n Ejercicio 7:")
 console.log("Conexiones por protocolo:", conexionesPorProtocolo);
 
 // Ejercicio 8: Filtrar y transformar alertas de seguridad
@@ -137,6 +144,7 @@ const informeActividad = conexionesActivas.map(conexion => {
   };
 });
 
+console.log("\n Ejercicio 8:")
 console.log("Alertas críticas para el administrador:");
 console.log(alertasCriticas);
 console.log("Informe de actividad de red:", informeActividad);
@@ -183,6 +191,7 @@ const informeTopologia = topologiaRed.conexiones.map(conexion => {
   };
 });
 
+console.log("\n Ejercicio 9:")
 console.log("Conexiones por nodo:", conexionesPorNodo);
 console.log("Nodos ordenados por número de conexiones:", nodosOrdenados);
 console.log("Informe detallado de conexiones:", informeTopologia);
@@ -197,4 +206,5 @@ nodosOrdenados.forEach(([nodo, conexiones]) => {
   }
 });
 
+console.log("\n Ejercicio 10:")
 console.log("Sugerencias de optimización:", sugerencias);
