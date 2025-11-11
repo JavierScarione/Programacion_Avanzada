@@ -17,7 +17,7 @@ export class AppController {
     description: 'Mensaje de bienvenida exitoso',
     schema: {
       type: 'string',
-      example: 'Hello World! API REST de usuarios funcionando correctamente.'
+      example: '...API REST de usuarios funcionando correctamente...'
     }
   })
   getHello(): string {
